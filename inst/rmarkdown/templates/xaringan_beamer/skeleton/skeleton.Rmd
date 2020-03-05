@@ -1,0 +1,95 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+author: "Name"
+institute: "Institute"
+date: "Conference<br/><br/>`r format(Sys.time(), '%d %B %Y')`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: [beamer.css, beamer-fonts.css]
+    nature:
+      highlightStyle: github
+      highlightLines: TRUE
+      countIncrementalSlides: FALSE
+      ratio: '16:9'
+# Note: You can export slides to PDF with: pagedown::chrome_print("Output.html")
+# Note: Remark is designed such that if using incremental slides, they need to be separated by --, followed by a line break. Official documentation: https://github.com/gnab/remark/wiki/Markdown.
+# Note:
+## Xaringan can only include .png figures. You can include figures with:
+## ```{r out.width = "60%"} # Change figure size
+## knitr::include_graphics("Figures/Figure.png")
+## ```
+## Further instructions:
+## - https://community.rstudio.com/t/size-of-image-in-xaringan-slides/21319
+## - https://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/#arguments-out.width-and-out.height-apply-to-both-existing-images-and-r-generated-figures
+---
+
+```{r setup, include=FALSE}
+# Suppress the version number in the subdirectory name
+options(htmltools.dir.version = FALSE)
+
+# Define how figures are displayed
+knitr::opts_chunk$set(
+  echo=FALSE, 
+  warning=FALSE, 
+  message=FALSE,
+  fig.align="center"
+)
+```
+
+
+# Title
+--
+
+- Content
+--
+
+  - Content
+--
+
+  - Content
+--
+
+- Content
+---
+
+
+
+
+
+# Title
+--
+
+- Content
+--
+
+  - Content
+---
+
+
+
+
+
+class: center, middle
+
+<a href="mailto:florian.schaffner@politics.ox.ac.uk">
+.white[`r icon::fa("paper-plane")` florian.schaffner@politics.ox.ac.uk]
+</a>
+
+<a href="https://florianschaffner.com">
+.white[`r icon::fa("link")` florianschaffner.com]
+</a>
+
+<a href="http://twitter.com/FloSchaffner">
+.white[`r icon::fa("twitter")` @FloSchaffner]
+</a>
+
+<a href="http://github.com/fschaffner">
+.white[`r icon::fa("github")` fschaffner]
+</a>
+
+
+
+
+

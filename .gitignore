@@ -1,0 +1,9 @@
+.DS_Store
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+inst/rmarkdown/templates/pandoc_default_with_minimal_changes/skeleton/skeleton.pdf
+inst/rmarkdown/templates/svmiller_adaptation/skeleton/skeleton.pdf
+inst/rmarkdown/templates/svmiller_adaptation/skeleton/skeleton.html
+_Dross
