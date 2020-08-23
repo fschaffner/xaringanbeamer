@@ -1,6 +1,6 @@
 Package: xaringanbeamer
 Title: xaringan beamer theme template for Rmarkdown
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: person("Florian S.", "Schaffner", email = "florian.schaffner@outlook.com", role = c("aut", "cre"))
 Description: Rmarkdown templates by Florian S. Schaffner.
 License: MIT + file LICENSE
