@@ -36,6 +36,9 @@ knitr::opts_chunk$set(
   message=FALSE,
   fig.align="center"
 )
+
+# Add option of showing tile overview by pressing "o"
+xaringanExtra::use_tile_view() 
 ```
 
 
