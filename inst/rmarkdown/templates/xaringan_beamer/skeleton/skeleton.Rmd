@@ -3,7 +3,7 @@ title: "Title"
 subtitle: "Subtitle"
 author: "Name"
 institute: "Institute"
-date: "Conference<br/><br/>`r format(Sys.time(), '%d %B %Y')`"
+date: "Conference<br/><br/>`r format(Sys.time(), '%e %B %Y')`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -13,7 +13,8 @@ output:
       highlightLines: TRUE
       countIncrementalSlides: FALSE
       ratio: '16:9'
-# Note: You can export slides to PDF with: pagedown::chrome_print("Output.html")
+# Note: You can save the slides in .pdf format by uncommenting the line below
+#knit: pagedown::chrome_print
 # Note: Remark is designed such that if using incremental slides, they need to be separated by --, followed by a line break. Official documentation: https://github.com/gnab/remark/wiki/Markdown.
 # Note:
 ## Xaringan can only include .png figures. You can include figures with:
@@ -31,29 +32,25 @@ options(htmltools.dir.version = FALSE)
 
 # Define how figures are displayed
 knitr::opts_chunk$set(
-  echo=FALSE, 
-  warning=FALSE, 
-  message=FALSE,
-  fig.align="center"
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center"
 )
 
 # Add option of showing tile overview by pressing "o"
-xaringanExtra::use_tile_view() 
+xaringanExtra::use_tile_view()
 ```
 
 
+
+
+
 # Title
---
 
 - Content
---
-
   - Content
---
-
   - Content
---
-
 - Content
 ---
 
@@ -67,7 +64,60 @@ xaringanExtra::use_tile_view()
 - Content
 --
 
-  - Content
+  - .red[Content]
+--
+
+  - .blue[Content]
+--
+
+- Content
+---
+
+
+
+
+
+# Slide with Footnote
+
+- Some text that needs a footnote<sup>1</sup>
+
+.footnote[
+[1] Footnote with a [link to the Appendix](#appendix-link)
+]
+---
+
+
+
+
+
+# Ordered List
+
+1. Item one
+1. Item two
+1. Item three
+1. Item four
+---
+
+
+
+
+class: center, middle
+
+<a href="mailto:florian.schaffner@politics.ox.ac.uk"> 
+`r icons::icon_style(icons::fontawesome("envelope", style = "solid"), fill = "#3333B3")` florian.schaffner@politics.ox.ac.uk
+</a>
+
+<a href="https://florianschaffner.com"> 
+`r icons::icon_style(icons::fontawesome("globe"), fill = "#3333B3")` florianschaffner.com
+</a>
+
+<a href="http://twitter.com/FloSchaffner"> 
+`r icons::icon_style(icons::fontawesome("twitter"), fill = "#3333B3")` @FloSchaffner
+</a>
+
+<a href="http://github.com/fschaffner"> 
+`r icons::icon_style(icons::fontawesome("github"), fill = "#3333B3")` fschaffner
+</a>
 ---
 
 
@@ -76,23 +126,17 @@ xaringanExtra::use_tile_view()
 
 class: center, middle
 
-<a href="mailto:florian.schaffner@politics.ox.ac.uk">
-.white[`r icon::fa("paper-plane")` florian.schaffner@politics.ox.ac.uk]
-</a>
-
-<a href="https://florianschaffner.com">
-.white[`r icon::fa("link")` florianschaffner.com]
-</a>
-
-<a href="http://twitter.com/FloSchaffner">
-.white[`r icon::fa("twitter")` @FloSchaffner]
-</a>
-
-<a href="http://github.com/fschaffner">
-.white[`r icon::fa("github")` fschaffner]
-</a>
+# Appendix
+---
 
 
 
 
 
+name: appendix-link
+# Appendix Slide
+
+- Content
+  - Content
+  - Content
+- Content

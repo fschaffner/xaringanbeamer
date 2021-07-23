@@ -28,13 +28,13 @@ wiki](https://github.com/yihui/xaringan/wiki).
 
 ## Installation
 
-Install the **xaringan** package from CRAN if you haven’t installed it
-already:
+Install the packages **xaringan**, **xaringanExtra**, and **icons** from
+CRAN:
 
 ``` r
-if (!require("xaringan")) {
-  install.packages("xaringan")
-}
+install.packages("xaringan")
+install.packages("xaringanExtra")
+install.packages("icons")
 ```
 
 Install the **xaringanbeamer** package from GitHub:
