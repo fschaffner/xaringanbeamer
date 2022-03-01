@@ -61,16 +61,16 @@ xaringanExtra::use_tile_view()
 # Title
 --
 
-- Content
+- Content with an .beamer[emphasis]
 --
 
-  - .red[Content]
+  - Content with an .red[emphasis]
 --
 
-  - .blue[Content]
+  - Content with an .blue[emphasis]
 --
 
-- Content
+- Content with an **emphasis**
 ---
 
 
@@ -97,6 +97,26 @@ xaringanExtra::use_tile_view()
 1. Item three
 1. Item four
 ---
+
+
+
+
+
+# Emojis
+
+- Examples:
+  - Motivation ⚡
+  - Research Question❓
+  - Theory 📖
+  - Model and Hypotheses 💡
+  - Data and Methods 🔬
+  - Results 📈 
+  - Conclusions❗
+  - References 📚
+  - Supplementary Analyses 📊
+- Search emojis: https://emojipedia.org/ and https://emojifinder.com/find 
+---
+
 
 
 
